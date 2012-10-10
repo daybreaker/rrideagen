@@ -1,5 +1,5 @@
 require 'rubygems'
 require 'sinatra'
-require 'rrideagen.rb'
+require './rrideagen.rb'
 
 run Sinatra::Application 
