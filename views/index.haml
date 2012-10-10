@@ -1,6 +1,8 @@
+-num_apis = @apis.count
 -@apis.each do |api|
-  %h2
-    %a{:href =>api.id}
-      =api.title
-  %p=api.summary
-  %p=api.content['api']
+  %div{:class => grid_class(num_apis)}
+    %h2
+      %a{:href =>api.id}
+        =api.title
+    %p=api.summary
+    %p=api.content['api']

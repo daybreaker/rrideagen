@@ -4,6 +4,7 @@ require 'haml'
 
 require_relative 'lib/pwapi'
 require_relative 'lib/api'
+require_relative 'lib/helpers'
 
 get '/' do
   api_finder = PWApi.new({})
