@@ -1,1 +1,6 @@
-HEY
+-@apis.each do |api|
+  %h2
+    %a{:href =>api.id}
+      =api.title
+  %p=api.summary
+  %p=api.content['api']

@@ -1,3 +1,5 @@
-# encoding: UTF-8
-require './rrideagen'
-run Sinatra::Application
+require 'rubygems'
+require 'sinatra'
+require 'rrideagen.rb'
+
+run Sinatra::Application 

@@ -1,15 +1,15 @@
-#!/usr/bin/env ruby
-# encoding: UTF-8
 require 'rubygems'
 require 'sinatra'
 require 'haml'
 
 require_relative 'lib/pwapi'
+require_relative 'lib/api'
 
 get '/' do
-  haml :index, :format => :html5
+  api_finder = PWApi.new({})
   @apis = []
-  (2..4).to_a.sample.times do 
-    @apis << PWApi.get_random_api
+  (2..4).to_a.sample.times do
+    @apis << Api.new(api_finder.get_random_api)
   end
+  haml :index, :format => :html5
 end
