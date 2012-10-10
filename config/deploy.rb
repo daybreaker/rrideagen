@@ -24,7 +24,7 @@ $:.unshift(File.expand_path('./lib', ENV['rvm_path']))
 # Load RVM's capistrano plugin.    
 require "rvm/capistrano"
 set :rvm_type, :user  # Don't use system-wide RVM
-set :rvm_ruby_string, 'ruby-1.9.3-head'                   
+set :rvm_ruby_string, 'ruby-1.9.3-head@rrideagen'                   
 
 after "deploy", "deploy:cleanup" # keep only the last 5 releases
 
