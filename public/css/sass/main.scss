@@ -1,10 +1,12 @@
 @import 'bourbon/bourbon';
 @import "neat/neat";
+@import url(http://fonts.googleapis.com/css?family=Leckerli+One);
 @charset "UTF-8";
 @include reset-and-normalize;
 
 body{
   @include background(linear-gradient(rgb(96,96,96) 20%%, rgb(160,160,160) 85%%));
+  min-height: 100%;
 }
 
 #header{
@@ -21,10 +23,60 @@ body{
 #container{
   margin: 20px;
   @include outer-container;
-  div{
+  padding: 20px;
+  
+  .api_container{
     border: 1px solid black;
-    padding: 20px;
-    @include border-radius(10px);
+    @include border-radius(10px 10px 0 0);
+    
+    h2 {
+      padding: 5px 10px;
+      color: white;
+      vertical-align: middle;
+      font-size: 20px;
+      background-color: #2A120A;
+      @include border-radius(9px 9px 0 0);
+      
+      a {
+        color: white;
+        text-decoration: none;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+      
+    }
+    
+    h3 {
+      text-decoration: italic;
+    }
+    
+    p {
+      margin-top: 10px;
+    }
+    
+    position: relative;
+    &:not(.last):after{
+      content: "plus";
+      position: absolute;
+      top: 130px;
+      right: -55px;
+      color: #2A0A0A;
+      font-family: 'Leckerli One', cursive;
+      font-size: 45px;
+      z-index: 125;
+    }
+    
+    .api-info{
+      img.icon {
+        float: left;
+        margin: 0 10px 10px 0;
+      }
+      
+      padding: 20px 30px;
+      background-color: #F7F8E0;
+    }
+    
     &.two-apis {
       @include span-columns(6);
     }
@@ -33,6 +85,11 @@ body{
     }
     &.four-apis {
       @include span-columns(3);
+      .api-info img.icon{
+        float: none;
+        display: block;
+        margin: 0 auto 10px;
+      }
     }
   }
 }
