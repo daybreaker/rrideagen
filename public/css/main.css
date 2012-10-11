@@ -192,7 +192,7 @@ body {
         #container .api_container h2 a:hover {
           text-decoration: underline; }
     #container .api_container h3 {
-      text-decoration: italic; }
+      font-style: italic; }
     #container .api_container p {
       margin-top: 10px; }
     #container .api_container:not(.last):after {
