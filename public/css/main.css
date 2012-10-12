@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Leckerli+One);
+@import url(http://fonts.googleapis.com/css?family=Amaranth:700italic);
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -201,12 +201,14 @@ body {
       top: 130px;
       right: -55px;
       color: #2A0A0A;
-      font-family: 'Leckerli One', cursive;
+      font-family: 'Amaranth', sans-serif;
+      font-style: italic;
       font-size: 45px;
-      z-index: 125; }
+      z-index: 125;
+      text-shadow: 3px 3px 0 white, -3px -3px 0 white, -3px 3px 0 white, 3px -3px 0 white; }
     #container .api_container .api-info {
       padding: 20px 30px;
-      background-color: #F7F8E0; }
+      background-color: #f7f8c0; }
       #container .api_container .api-info img.icon {
         float: left;
         margin: 0 10px 10px 0; }

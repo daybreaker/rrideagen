@@ -1,6 +1,6 @@
 @import 'bourbon/bourbon';
 @import "neat/neat";
-@import url(http://fonts.googleapis.com/css?family=Leckerli+One);
+@import url(http://fonts.googleapis.com/css?family=Amaranth:700italic);
 @charset "UTF-8";
 @include reset-and-normalize;
 
@@ -62,9 +62,15 @@ body{
       top: 130px;
       right: -55px;
       color: #2A0A0A;
-      font-family: 'Leckerli One', cursive;
+      font-family: 'Amaranth', sans-serif;
+      font-style: italic;
       font-size: 45px;
       z-index: 125;
+      text-shadow:
+        3px 3px 0 #fff,
+        -3px -3px 0 #fff,
+        -3px 3px 0 #fff,
+        3px -3px 0 #fff;
     }
     
     .api-info{
@@ -74,7 +80,7 @@ body{
       }
       
       padding: 20px 30px;
-      background-color: #F7F8E0;
+      background-color: #f7f8c0;
     }
     
     &.two-apis {
