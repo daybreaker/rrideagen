@@ -1,5 +1,16 @@
 require 'ostruct'
 class Api < OpenStruct
+  def intialize(api)
+    @api_info = nil
+  end
+  
+  def api_info
+    unless @api_info
+      @api_info = OpenStruct.new(content['api'])
+    end
+    @api_info
+  end
+
 end
 
 =begin
