@@ -1,6 +1,6 @@
 require "bundler/capistrano"
 
-server "50.116.30.91", :web, :app, :db, primary: true
+server "198.211.103.78", :web, :app, :db, primary: true
 set :application, "rrideagen"
 
 set :user, 'daybreaker'
